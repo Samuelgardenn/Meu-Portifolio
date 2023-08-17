@@ -156,10 +156,18 @@ a {
   transform: translateX(-100px);
   animation: fadeInFromLeft 2s forwards;
 }
+
+section#sobre{
+  margin: 8em 0;
+}
 .about {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 6s forwards;
+}
+
+section#skills {
+  margin: 5em 0 0;
 }
 
 .skills {
@@ -243,7 +251,7 @@ body {
 
 .container {
   width: 80%;
-  height: 15vh;
+  height: 8vh;
   display: flex;
   gap: 63%;
 }
@@ -380,6 +388,7 @@ body {
   width: 5em;
   height: 3em;
 }
+
 
 .conteudo__contato {
   list-style-type: none;
@@ -545,8 +554,9 @@ section#skills .cards {
 
 section#contacts {
   width: 48vh;
-  height: 70vh;
-  margin: auto;
+  height: 130vh;
+  
+  margin: 11em 0 0 0;
 }
 
 section#contacts .contacts {
@@ -637,6 +647,8 @@ section#contacts .contacts .icons .icon .box img {
     justify-content: start;
     padding: 0;
   }
+
+
 
   .conteudo__itens{
     margin: 0;
