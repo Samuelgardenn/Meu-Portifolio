@@ -146,20 +146,22 @@ a {
   color: currentColor
 }
 
-.logo{
+.logo {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 1s forwards;
 }
+
 .conteudo {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 2s forwards;
 }
 
-section#sobre{
+section#sobre {
   margin: 8em 0;
 }
+
 .about {
   opacity: 0;
   transform: translateX(-100px);
@@ -176,7 +178,7 @@ section#skills {
   animation: fadeInFromLeft 7s forwards;
 }
 
-.contact-icon{
+.contact-icon {
   opacity: 0;
   transform: translateX(-100px);
   animation: fadeInFromLeft 10s forwards;
@@ -244,16 +246,17 @@ section#skills {
   font-size: 1.6rem
 }
 
-
 body {
   background-color: #011522;
 }
 
-.container {
-  width: 80%;
+.cabecalho {
+  width: auto;
   height: 8vh;
-  display: flex;
-  gap: 63%;
+}
+
+.container {
+  gap: 5rem;
 }
 
 .social {
@@ -356,7 +359,6 @@ body {
   height: 75vh;
   font-weight: 500;
   color: #F9F9F9;
-
 }
 
 .conteudo__info {
@@ -367,7 +369,6 @@ body {
 .conteudo__titulo {
   font-size: 4.5rem;
   margin-top: 1em;
-
 }
 
 .conteudo__subtitulo {
@@ -388,7 +389,6 @@ body {
   width: 5em;
   height: 3em;
 }
-
 
 .conteudo__contato {
   list-style-type: none;
@@ -418,7 +418,7 @@ body {
   color: rgb(4, 4, 38);
 }
 
-.title{
+.title {
   height: 80vh;
 }
 
@@ -432,10 +432,7 @@ body {
   align-items: center;
   gap: 2.5rem;
   padding: 0 0;
-
 }
-
-
 
 section#sobre .about h2 {
   font-family: 'DM Sans', sans-serif;
@@ -466,13 +463,15 @@ section#sobre .about p {
   }
 }
 
-
 section#skills {
-  margin-top: 10em;
   margin: auto;
-  width: 48vh;
-  height: 80vh;
+  width: auto;
+  height: auto;
   justify-content: center;
+}
+
+section#skills .skills {
+  height: 90vh
 }
 
 section#skills .skills .container {
@@ -480,6 +479,7 @@ section#skills .skills .container {
   flex-direction: column;
   align-items: center;
   width: 48vh;
+  height: 80vh;
 }
 
 section#skills .skills .container h2 {
@@ -487,10 +487,7 @@ section#skills .skills .container h2 {
   font-size: 3.2rem;
   color: #F9F9F9;
   font-weight: 600;
-
 }
-
-
 
 section#skills .skills .container .cards {
   display: flex;
@@ -546,7 +543,7 @@ section#skills .skills .container .cards .box:hover {
 
 section#skills .cards {
   width: 45vh;
-  height: 60vh;
+  height: 85vh;
 }
 
 
@@ -554,13 +551,8 @@ section#skills .cards {
 
 section#contacts {
   width: 48vh;
-  height: 130vh;
-  
-  margin: 11em 0 0 0;
-}
-
-section#contacts .contacts {
-  margin-top: 7.5rem
+  height: 120vh;
+  margin: 2em 0 0 0;
 }
 
 section#contacts .contacts .container {
@@ -570,6 +562,7 @@ section#contacts .contacts .container {
   margin-right: auto;
   margin-left: auto;
   width: 90%;
+  height: auto;
 }
 
 section#contacts .contacts .container h2 {
@@ -577,7 +570,6 @@ section#contacts .contacts .container h2 {
   font-size: 3.2rem;
   color: #F9F9F9;
   font-weight: 600;
-
 }
 
 section#contacts .contacts .icons {
@@ -639,26 +631,25 @@ section#contacts .contacts .icons .icon .box img {
 
 /* media query*/
 @media (min-width: 750px) {
-  .container{
+  .container {
     height: 10vh;
   }
 
-  .title{
+  .title {
     justify-content: start;
     padding: 0;
   }
 
-
-
-  .conteudo__itens{
+  .conteudo__itens {
     margin: 0;
     height: 90vh;
     width: auto;
   }
 
-  .about{
+  .about {
     height: 80vh;
   }
+
   section#contacts {
     width: auto;
   }
@@ -668,34 +659,38 @@ section#contacts .contacts .icons .icon .box img {
   }
 }
 
-@media (min-width: 934px){
-  section#skills{
+@media (min-width: 934px) {
+  section#skills {
     display: flex;
     height: 50vh;
   }
+
   section#skills .cards {
     width: 110vh;
     height: auto;
     justify-content: space-between;
   }
-  section#skills .skills .container{
+
+  section#skills .skills .container {
     width: 80vh;
     height: 10vh;
   }
+
   section#contacts {
     height: 50vh;
     font-size: 2.8;
   }
-
 }
-/* Media query  450px */
+
 @media (min-width: 1130px) {
 
   .logo {
+    width: 12em;
     display: block;
+    height: auto;
     margin: 2rem 0 0 5rem;
   }
-  
+
 
   .conteudo {
     height: 85vh;
@@ -713,7 +708,7 @@ section#contacts .contacts .icons .icon .box img {
     justify-content: space-between;
   }
 
-  .conteudo__info{
+  .conteudo__info {
     margin: 10em 0 0;
     width: 80vh;
     height: 45vh;
@@ -728,28 +723,32 @@ section#contacts .contacts .icons .icon .box img {
     font-size: 3.8rem;
   }
 
-  section#sobre .about p{
+  section#sobre .about p {
     font-size: 2.8rem;
     width: 85%;
   }
-  section#skills{
+
+  section#skills {
     text-align: center;
     height: 50vh;
     width: auto;
     margin: 0
   }
+
   section#skills .container {
     height: 30vh;
     width: 150vh;
-    
   }
+
   section#skills .container h2 {
     height: 30vh;
     width: 150vh;
   }
-  section#skills .skills .container .cards{
-    gap: 0;
+
+  section#skills .skills .container .cards {
+    gap: 2rem;
   }
+
   section#contacts .contacts .icons {
     gap: 0;
   }
