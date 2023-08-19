@@ -103,10 +103,6 @@ section {
   display: block
 }
 
-body {
-  line-height: 1
-}
-
 ol,
 ul {
   list-style: none
@@ -158,10 +154,6 @@ a {
   animation: fadeInFromLeft 2s forwards;
 }
 
-section#sobre {
-  margin: 8em 0;
-}
-
 .about {
   opacity: 0;
   transform: translateX(-100px);
@@ -191,25 +183,10 @@ section#skills {
   }
 }
 
-
 @keyframes backgroundScale {
   to {
     background-color: #8257E6;
     transform: scale(1.1)
-  }
-}
-
-@keyframes scaleDelayed {
-  0% {
-    transform: scale(1)
-  }
-
-  50% {
-    transform: scale(1.1)
-  }
-
-  100% {
-    transform: scale(1)
   }
 }
 
@@ -351,12 +328,13 @@ body {
   text-align: center;
   justify-content: start;
   padding: 0 2.5rem;
+  height: 100vh;
 }
 
 .conteudo__itens {
   display: block;
   font-family: 'Poppins', sans-serif;
-  height: 75vh;
+  height: 100vh;
   font-weight: 500;
   color: #F9F9F9;
 }
@@ -418,14 +396,9 @@ body {
   color: rgb(4, 4, 38);
 }
 
-.title {
-  height: 80vh;
-}
-
 .about {
-  margin-top: 10rem;
   margin: auto;
-  height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -464,22 +437,24 @@ section#sobre .about p {
 }
 
 section#skills {
-  margin: auto;
-  width: auto;
+  margin: 1rem 0;
+  width: 48vh;
   height: auto;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 section#skills .skills {
-  height: 90vh
+  height: 100vh
 }
 
 section#skills .skills .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 48vh;
-  height: 80vh;
+  width: auto;
+
 }
 
 section#skills .skills .container h2 {
@@ -492,7 +467,7 @@ section#skills .skills .container h2 {
 section#skills .skills .container .cards {
   display: flex;
   align-items: center;
-  gap: 5rem
+  gap: 2rem
 }
 
 @media (max-width: 992px) {
@@ -505,8 +480,8 @@ section#skills .skills .container .cards {
 section#skills .skills .container .cards .box {
   text-align: center;
   background-color: #212121;
-  padding: 1.7rem 4.2rem 3.7rem 4.2rem;
-  border-top-left-radius: 2.5rem;
+  padding: 0.7rem 3.2rem 2.7rem 3.2rem;
+  border-top-left-radius: 1.5rem;
   cursor: pointer;
   transition: .2s
 }
@@ -541,27 +516,21 @@ section#skills .skills .container .cards .box:hover {
   transform: scale(1.1)
 }
 
-section#skills .cards {
-  width: 45vh;
-  height: 85vh;
-}
-
-
 /*contacts*/
 
 section#contacts {
   width: 48vh;
   height: 120vh;
   margin: 2em 0 0 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 section#contacts .contacts .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
-  width: 90%;
+  width: auto;
   height: auto;
 }
 
@@ -575,7 +544,7 @@ section#contacts .contacts .container h2 {
 section#contacts .contacts .icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
 }
 
@@ -585,7 +554,6 @@ section#contacts .contacts .icons .icon {
   align-items: center;
   justify-content: center;
   transition: .2s;
-  width: 20rem;
 }
 
 section#contacts .contacts .icons .icon:hover {
@@ -630,9 +598,21 @@ section#contacts .contacts .icons .icon .box img {
 }
 
 /* media query*/
-@media (min-width: 750px) {
-  .container {
-    height: 10vh;
+@media (min-width: 750px) and (max-width: 950px){
+
+  body {
+    line-height: 1;
+    width: 110vh;
+    margin: auto auto;
+  }
+
+  section#skills .skills .container .cards {
+    gap: 5rem;
+  }
+
+  section#skills .skills .container .cards .box {
+    padding: 1.7rem 4.2rem 3.7rem 4.2rem;
+    border-top-left-radius: 2.5rem;
   }
 
   .title {
@@ -640,49 +620,57 @@ section#contacts .contacts .icons .icon .box img {
     padding: 0;
   }
 
+  .conteudo {
+    height: 120vh;
+    width: 120vh;
+    margin: auto auto;
+  }
   .conteudo__itens {
     margin: 0;
-    height: 90vh;
+    height: 120vh;
     width: auto;
+  }
+
+  section#contacts .contacts .icons {
+    height: 25vh;
+    width: 110vh;
+    margin: auto auto;
+    justify-content: space-around;
   }
 
   .about {
     height: 80vh;
-  }
-
-  section#contacts {
-    width: auto;
-  }
-
-  section#skills {
-    height: 75vh;
-  }
-}
-
-@media (min-width: 934px) {
-  section#skills {
-    display: flex;
-    height: 50vh;
-  }
-
-  section#skills .cards {
     width: 110vh;
-    height: auto;
-    justify-content: space-between;
-  }
-
-  section#skills .skills .container {
-    width: 80vh;
-    height: 10vh;
+    margin: auto auto;
   }
 
   section#contacts {
-    height: 50vh;
-    font-size: 2.8;
+    height: 80vh;
+    width: 110vh;
+    margin: auto auto;
+  }
+
+  section#contacts .contacts {
+    height: 80vh;
+    width: 110vh;
+    gap: 5rem;
+  }
+
+  section#skills {
+    height: 90vh;
+    margin: auto auto 8em;
+    width: 110vh;
+  }
+  section#skills .skills {
+    height: 90vh;
+  }
+  section#skills .skills .container{
+    height: 40vh;
   }
 }
 
-@media (min-width: 1130px) {
+
+@media (min-width: 950px) {
 
   .logo {
     width: 12em;
@@ -690,7 +678,6 @@ section#contacts .contacts .icons .icon .box img {
     height: auto;
     margin: 2rem 0 0 5rem;
   }
-
 
   .conteudo {
     height: 85vh;
@@ -730,13 +717,22 @@ section#contacts .contacts .icons .icon .box img {
 
   section#skills {
     text-align: center;
-    height: 50vh;
+    height: 80vh;
     width: auto;
     margin: 0
   }
 
+  section#skills .skills{
+    height: 80vh;
+  }
+
+  section#skills .skills .container .cards .box {
+    padding: 2.7rem 5.2rem 4.7rem 5.2rem;
+    border-top-left-radius: 2.5rem;
+  }
+
   section#skills .container {
-    height: 30vh;
+    height: 50vh;
     width: 150vh;
   }
 
@@ -745,11 +741,28 @@ section#contacts .contacts .icons .icon .box img {
     width: 150vh;
   }
 
+  section#contacts {
+    height: 80vh;
+    width: 160vh;
+    margin: auto auto;
+  }
+
+  section#contacts .contacts {
+    height: 80vh;
+    width: 160vh;
+    
+    font-size: 2.2rem;
+ 
+  }
+
+  section#contacts .contacts .icons{
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3em;
+  }
+
   section#skills .skills .container .cards {
     gap: 2rem;
   }
 
-  section#contacts .contacts .icons {
-    gap: 0;
-  }
 }
