@@ -317,13 +317,13 @@ body {
   text-align: center;
   justify-content: start;
   padding: 0 2.5rem;
-  height: 100vh;
+  height: 80vh;
 }
 
 .conteudo__itens {
   display: block;
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+  height: 80vh;
   font-weight: 500;
   color: #F9F9F9;
 }
@@ -387,7 +387,8 @@ body {
 
 .about {
   margin: auto;
-  height: 100vh;
+  height: 50vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -413,6 +414,11 @@ section#sobre .about p {
   line-height: 180%;
 }
 
+@media (min-width: 500px) {
+  .about {
+    height: 100vh;
+  }
+}
 @media (max-width: 1200px) {
   section#sobre .about p {
     width: 100%;
@@ -432,7 +438,7 @@ section#skills {
 }
 
 section#skills .skills {
-  height: 100vh;
+  height: 60vh;
 }
 
 section#skills .skills .container {
@@ -503,10 +509,14 @@ section#skills .skills .container .cards .box:hover {
 /*contacts*/
 section#contacts {
   width: 48vh;
-  height: 120vh;
+  height: auto;
   margin: 2em 0 0 0;
   margin-right: auto;
   margin-left: auto;
+}
+
+section#contacts .contacts {
+  height: 150vh;
 }
 
 section#contacts .contacts .container {
@@ -514,7 +524,7 @@ section#contacts .contacts .container {
   flex-direction: column;
   align-items: center;
   width: auto;
-  height: auto;
+  height: 120vh;
 }
 
 section#contacts .contacts .container h2 {
@@ -528,7 +538,9 @@ section#contacts .contacts .icons {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  justify-content: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 20vh;
 }
 
 section#contacts .contacts .icons .icon {
@@ -537,6 +549,7 @@ section#contacts .contacts .icons .icon {
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  width: 20vh;
 }
 
 section#contacts .contacts .icons .icon:hover {
@@ -585,8 +598,15 @@ section#contacts .contacts .icons .icon .box img {
 @media (min-width: 750px) and (max-width: 950px) {
   body {
     line-height: 1;
-    width: 110vh;
+    width: 60vh;
     margin: auto auto;
+  }
+  .cabecalho {
+    width: 60vh;
+    height: 5vh;
+  }
+  .social {
+    width: 15vh;
   }
   section#skills .skills .container .cards {
     gap: 5rem;
@@ -598,48 +618,74 @@ section#contacts .contacts .icons .icon .box img {
   .title {
     justify-content: start;
     padding: 0;
+    width: 60vh;
   }
   .conteudo {
-    height: 120vh;
-    width: 120vh;
+    height: 85vh;
+    width: 60vh;
     margin: auto auto;
   }
   .conteudo__itens {
     margin: 0;
-    height: 120vh;
-    width: auto;
+    height: 85vh;
+    width: 60vh;
+  }
+  .conteudo__info {
+    height: 30vh;
+  }
+  .conteudo__imagem {
+    width: 55vh;
+  }
+  .conteudo__titulo {
+    margin: 0;
+    height: 5vh;
+  }
+  .conteudo__subtitulo {
+    font-size: 4rem;
+  }
+  .conteudo__area {
+    height: 5vh;
+  }
+  .conteudo__contato a {
+    font-size: 2rem;
+  }
+  .about {
+    height: 45vh;
+    width: 60vh;
+    margin: auto auto;
   }
   section#contacts .contacts .icons {
     height: 25vh;
-    width: 110vh;
+    width: 60vh;
     margin: auto auto;
     justify-content: space-around;
   }
-  .about {
-    height: 80vh;
-    width: 110vh;
-    margin: auto auto;
+  section#contacts .contacts .icons .icon {
+    width: 60vh;
   }
   section#contacts {
-    height: 80vh;
-    width: 110vh;
+    height: 110vh;
+    width: 60vh;
     margin: auto auto;
   }
   section#contacts .contacts {
-    height: 80vh;
-    width: 110vh;
+    height: 50vh;
+    width: 60vh;
     gap: 5rem;
   }
+  section#contacts .contacts .container {
+    height: auto;
+  }
   section#skills {
-    height: 90vh;
+    height: 30vh;
     margin: auto auto 8em;
-    width: 110vh;
+    width: 60vh;
   }
   section#skills .skills {
-    height: 90vh;
+    height: 30vh;
   }
   section#skills .skills .container {
-    height: 40vh;
+    height: 30vh;
   }
 }
 @media (min-width: 950px) {
@@ -701,12 +747,12 @@ section#contacts .contacts .icons .icon .box img {
     width: 150vh;
   }
   section#contacts {
-    height: 80vh;
+    height: 40vh;
     width: 160vh;
     margin: auto auto;
   }
   section#contacts .contacts {
-    height: 80vh;
+    height: 40vh;
     width: 160vh;
     font-size: 2.2rem;
   }
@@ -714,6 +760,12 @@ section#contacts .contacts .icons .icon .box img {
     align-items: center;
     justify-content: space-evenly;
     gap: 3em;
+    width: 160vh;
+    flex-wrap: nowrap;
+  }
+  section#contacts .contacts .icons .icon {
+    width: 160vh;
+    height: auto;
   }
   section#skills .skills .container .cards {
     gap: 2rem;
