@@ -317,7 +317,7 @@ body {
   text-align: center;
   justify-content: start;
   padding: 0 2.5rem;
-  height: 80vh;
+  height: 100vh;
 }
 
 .conteudo__itens {
@@ -386,8 +386,8 @@ body {
 }
 
 .about {
-  margin: auto;
-  height: 50vh;
+  margin: 2em;
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -430,7 +430,7 @@ section#sobre .about p {
   }
 }
 section#skills {
-  margin: 1rem 0;
+  margin: 10em 0 5em;
   width: 48vh;
   height: auto;
   margin-left: auto;
@@ -438,7 +438,7 @@ section#skills {
 }
 
 section#skills .skills {
-  height: 60vh;
+  height: 100vh;
 }
 
 section#skills .skills .container {
@@ -508,6 +508,7 @@ section#skills .skills .container .cards .box:hover {
 
 /*contacts*/
 section#contacts {
+  margin: 8em auto;
   width: 48vh;
   height: auto;
   margin: 2em 0 0 0;
@@ -603,7 +604,7 @@ section#contacts .contacts .icons .icon .box img {
   }
   .cabecalho {
     width: 60vh;
-    height: 5vh;
+    height: 15vh;
   }
   .social {
     width: 15vh;
@@ -615,15 +616,10 @@ section#contacts .contacts .icons .icon .box img {
     padding: 1.7rem 4.2rem 3.7rem 4.2rem;
     border-top-left-radius: 2.5rem;
   }
-  .title {
-    justify-content: start;
-    padding: 0;
-    width: 60vh;
-  }
   .conteudo {
-    height: 85vh;
+    height: 105vh;
     width: 60vh;
-    margin: auto auto;
+    margin: auto auto 8em;
   }
   .conteudo__itens {
     margin: 0;
@@ -650,7 +646,7 @@ section#contacts .contacts .icons .icon .box img {
     font-size: 2rem;
   }
   .about {
-    height: 45vh;
+    height: 100vh;
     width: 60vh;
     margin: auto auto;
   }
@@ -664,9 +660,9 @@ section#contacts .contacts .icons .icon .box img {
     width: 60vh;
   }
   section#contacts {
-    height: 110vh;
+    height: 140vh;
     width: 60vh;
-    margin: auto auto;
+    margin: 8em auto 2em;
   }
   section#contacts .contacts {
     height: 50vh;
@@ -677,15 +673,15 @@ section#contacts .contacts .icons .icon .box img {
     height: auto;
   }
   section#skills {
-    height: 30vh;
+    height: 80vh;
     margin: auto auto 8em;
     width: 60vh;
   }
   section#skills .skills {
-    height: 30vh;
+    height: 80vh;
   }
   section#skills .skills .container {
-    height: 30vh;
+    height: 50vh;
   }
 }
 @media (min-width: 950px) {
