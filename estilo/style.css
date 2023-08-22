@@ -159,10 +159,6 @@ a {
   animation: fadeInFromLeft 6s forwards;
 }
 
-section#skills {
-  margin: 5em 0 0;
-}
-
 .skills {
   opacity: 0;
   transform: translateX(-100px);
@@ -430,7 +426,7 @@ section#sobre .about p {
   }
 }
 section#skills {
-  margin: 5em 0 1em;
+  margin: 10em 0 5em;
   width: 48vh;
   height: auto;
   margin-left: auto;
@@ -692,7 +688,7 @@ section#contacts .contacts .icons .icon .box img {
     margin: 2rem 0 0 5rem;
   }
   .conteudo {
-    height: 85vh;
+    height: 100vh;
     align-items: center;
     gap: 10%;
   }
@@ -714,6 +710,9 @@ section#contacts .contacts .icons .icon .box img {
     width: 70vh;
     height: 70vh;
   }
+  .about {
+    height: 120vh;
+  }
   section#sobre .about h2 {
     font-size: 3.8rem;
   }
@@ -723,9 +722,9 @@ section#contacts .contacts .icons .icon .box img {
   }
   section#skills {
     text-align: center;
-    height: 80vh;
+    height: 30vh;
     width: auto;
-    margin: 0;
+    margin: 1em 0 0;
   }
   section#skills .skills {
     height: 80vh;
@@ -752,15 +751,19 @@ section#contacts .contacts .icons .icon .box img {
     width: 160vh;
     font-size: 2.2rem;
   }
+  section#contacts .contacts .container {
+    height: 60vh;
+  }
   section#contacts .contacts .icons {
     align-items: center;
     justify-content: space-evenly;
     gap: 3em;
-    width: 160vh;
+    width: 124vh;
     flex-wrap: nowrap;
+    height: 40vh;
   }
   section#contacts .contacts .icons .icon {
-    width: 160vh;
+    width: 124vh;
     height: auto;
   }
   section#skills .skills .container .cards {
