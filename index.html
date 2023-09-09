@@ -8,7 +8,10 @@
     <link rel="shortcut icon" href="assets/icone.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollRevael.js"></script>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/scrollReveal.css">
 </head>
 
 <body>
@@ -62,9 +65,9 @@
 
 
 
-    <section id="skills" class="skills ">
-        <div class="skills">
-            <div class="container">
+    <section id="skills" class="skills scroll-1">
+        <div class="skills scroll-1">
+            <div class="container scroll-1">
                 <h2>Habilidades</h2>
                 <div class="cards">
                     <div class="box">
@@ -93,8 +96,8 @@
     </section>
     <section id="sobre" class="about">
         <div class="about">
-            <h2>Sobre mim</h2>
-            <p> 22 anos, cursando tecnólogo em Analise e Desenvolvimento de Sistemas. <br>
+            <h2 class="scroll-2">Sobre mim</h2>
+            <p class="scroll-2"> 22 anos, cursando tecnólogo em Analise e Desenvolvimento de Sistemas. <br>
                 Juntamente uma formação de Desenvolvimento Full-Stack com especialização em Front-End na Alura. <br>
                 Atuando como Desenvolvedor Front-end, onde lido com aplicações Web em React.js. <br>
                 Possuo conhecimentos sólidos em: HTML5, CSS3, JavaScript, SASS, Figma, Bootstrap, Git e MySQL.
@@ -104,9 +107,9 @@
     </section>
     <!--em produção para uma futura aba de projetos -->
 
-    <section id="contacts" class=""contacts>
-        <div class="contacts">
-            <div class="container ">
+    <section id="contacts" class="contacts scroll-3">
+        <div class="contacts scroll-3">
+            <div class="container scroll-3 ">
                 <h2>Contatos</h2>
                 <div class="icons">
                     <div class="icon contact-icon">
@@ -176,6 +179,7 @@
             sectionContatos.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
+    <script src="scrollRevael.js"></script>
 </body>
 
 </html>
