@@ -1,11 +1,11 @@
 window.sr = ScrollReveal({reset: true})
 
 ScrollReveal().reveal('.scroll-1',{
-    delay: 400
+    delay: 300
 });
 ScrollReveal().reveal('.scroll-2',{
-    delay: 500
+    delay: 300
 });
 ScrollReveal().reveal('.scroll-3',{
-    delay:600
+    delay:300
 });
