@@ -8,7 +8,7 @@
 
 ## 💻 Sobre
 
-Projeto feito no intuito de me apresentar, como desenvolvedor web front-end.
+Projeto feito no intuito de me apresentar, como desenvolvedor de software.
 
 ## 🤯 O site é composto por:
 
