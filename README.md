@@ -1,6 +1,7 @@
 <h1 align="center">Portifólio - Samuel Alves 💻</h1>
 
-![Imagem do projeto finalizado](assets/portifolio-foto.png)
+![Imagem do projeto finalizado](<img width="1918" height="777" alt="image" src="https://github.com/user-attachments/assets/ae58ce71-5e72-45b8-85ec-b6ac329f570d" />
+)
 
 <h4 align="center"><a href="https://samuelalves.vercel.app/">Confira o projeto aqui</a></h4>
 
